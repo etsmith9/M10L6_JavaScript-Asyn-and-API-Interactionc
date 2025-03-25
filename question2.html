@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer App</title>
+  <script src="question2.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 100px;
+      margin: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #timerDisplay {
+      font-size: 32px;
+      margin: 20px 0;
+    }
+      
+
+    .notification {
+      background-color: #c9d3f2;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 20px auto;
+      width: 300px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Question 2. JavaScript Timer App</h1>
+
+  <!-- Task 1. Countdown Timer -->
+  <div>
+    <h3>Countdown Timer</h3>
+    <input type="number" id="countdownInput" placeholder="Seconds" />
+    <button onclick="startCountdown()">Start Countdown</button>
+    <div id="timerDisplay"> Waiting...</div>
+  </div>
+
+  <!-- Task 2. Delayed Notification -->
+  <div>
+    <h3>Delayed Notification</h3>
+    <input type="number" id="delayInput" placeholder="Seconds" />
+    <button onclick="startDelayedNotification()">Start Delay</button>
+  </div>
+
+  <!-- Task 3. Repeating Notification -->
+  <div>
+    <h3>Repeat Notification</h3>
+    <button onclick="startRepeatingNotification()">Start Repeating</button>
+    <button onclick="stopRepeatingNotification()">Stop Repeating</button>
+  </div>
+
+  <div id="notifications"></div>
+
+</body>
+</html>
